@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Contact Wild Waters for your rafting inquiries. Reach out to us for bookings, general questions, or suggestions." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/rafting.css" />
+    <title>Contact Us | Wild Waters</title>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo" />
+        <h1>Wild Waters</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h1>Contact Wild Waters</h1>
+
+            <!-- Company Info Section -->
+            <div class="company-info">
+                <h2>Our Office</h2>
+                <p>123 River Road, Riverlandia, RA 54321</p>
+                <p>Phone: <a href="tel:+27649758304">+27 (64) 975-8304</a></p>
+                <p>Email: <a href="mailto:info@wildwaters.com">info@wildwaters.com</a></p>
+            </div>
+
+            <!-- Google Map Section -->
+            <div class="google-map">
+                <h2>Find Us Here:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=...YOUR_EMBED_URL..." width="600" height="450"
+                    frameborder="0" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <!-- Employee Profiles Section -->
+            <div class="employee-profiles">
+                <h2>Meet Our Team</h2>
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee 1" />
+                    <figcaption>Vusi Nhlapho - River Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee 2" />
+                    <figcaption>Lerato Mvelase - Marketing Specialist</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee 3" />
+                    <figcaption>Thokozani Motaung - Adventure Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="POST">
+                <!-- Name Field -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <!-- Email Field -->
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <!-- Inquiry Type (Radio buttons) -->
+                <fieldset>
+                    <legend>What is your inquiry about?</legend>
+                    <label for="general">General Inquiry</label>
+                    <input type="radio" id="general" name="inquiry_type" value="General Inquiry" />
+
+                    <label for="reservation">Reservation Question</label>
+                    <input type="radio" id="reservation" name="inquiry_type" value="Reservation Question" />
+
+                    <label for="suggestion">Website Suggestion</label>
+                    <input type="radio" id="suggestion" name="inquiry_type" value="Website Suggestion" />
+                </fieldset>
+
+                <!-- Message Field -->
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <!-- Newsletter Subscription Checkbox -->
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe" />
+                    Please subscribe me to the monthly newsletter.
+                </label>
+
+                <!-- Submit Button -->
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | White Water Rafting Company | Mellissa Qoqa</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="images/twitter.png" alt="Twitter" />
+            </a>
+        </nav>
+        <!-- Link to Wireframe Image -->
+        <p><a href="images/contact-wireframe.jpg" target="_blank">View Contact Us Wireframe</a></p>
+    </footer>
+</body>
+
+</html>
